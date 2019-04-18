@@ -6,11 +6,14 @@ var Cart = function(items) {
   this.items = items;
 };
 
+// var cartItemArray = []; //Ryan and Josh Add this here.
+
+
 Cart.prototype.addItem = function(product, quantity) {
   this.CartItem = CartItem;
   this.product = product;
   this.quantity = quantity;
-  CartItem.push(this.items);
+  cartItemArray.push(this.items);//NOTE: Is this a cart item array?
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
   this.items.push(new CartItem(product, quantity));
 };

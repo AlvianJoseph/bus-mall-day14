@@ -47,14 +47,17 @@ function addSelectedItemToCart() {
 // TODO: Update the cart count in the header nav with the number of items in the Cart
 function updateCounter() {
   var navUpdater = document.getElementById('itemCount');
-  for(var i = 0; i < navUpdater; i++)
-    var itemNumbers = document.createElement('');
-  itemNumbers.textContent =this.Cart[i];
-  navUpdater.append(itemNumbers);
+    var divElement = document.createElement('div');
+  divElement.textContent = cart.items.length;
+  navUpdater.append(divElement);
+  
 }
+
+
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
+
   
   // TODO: Get the item and quantity from the form
   // TODO: Add a new element to the cartContents div with that information
