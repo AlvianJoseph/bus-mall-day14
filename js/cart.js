@@ -46,8 +46,7 @@ function showCart() {
         createTr.append(deleteThingTd);
         createTr.append(quantityTd);
         createTr.append(itemTd);
-
-    }
+ }
 }
 
 function removeItemFromCart(event) {
