@@ -11,10 +11,10 @@ function populateForm() {
 
   //TODO: Add an <option> tag inside the form's select for each product
   var selectElement = document.getElementById('items');
-  for (var i = 0; i < Product.allProducts; i++) {
+  for (var i in Product.allProducts) {
 
     var optionTag = document.createElement('option');
-    optionTag.textContent = Product.allProducts[i];
+    optionTag.textContent = Product.allProducts[i].name;
     selectElement.append(optionTag);
   }
 
@@ -57,6 +57,7 @@ function updateCounter() {
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
+
 
   
   // TODO: Get the item and quantity from the form
