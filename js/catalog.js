@@ -9,7 +9,7 @@ var cart = new Cart([]);
 // (the things in the Product.allProducts array) into the drop down list.
 function populateForm() {
 
-  //TODO: Add an <option> tag inside the form's select for each product
+  // Add an <option> tag inside the form's select for each product
   var selectElement = document.getElementById('items');
   for (var i in Product.allProducts) {
 
@@ -26,7 +26,7 @@ function populateForm() {
 function handleSubmit(event) {
   event.preventDefault();
 
-  // TODO: Prevent the page from reloading
+  //  Prevent the page from reloading
 
   // Do all the things ...
   addSelectedItemToCart();
